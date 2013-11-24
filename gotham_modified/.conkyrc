@@ -1,0 +1,55 @@
+use_xft yes
+xftfont 123:size=8
+xftalpha 0.1
+update_interval 1
+total_run_times 0
+own_window no
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 250 5
+maximum_width 1000
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color red
+default_outline_color green
+alignment top_left
+gap_x 60
+gap_y 150
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer yes
+background yes
+
+TEXT
+${voffset 10}${color EAEAEA}${font Monaco:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font Monaco:pixelsize=58}${time %d} ${voffset -30}${offset -28}${color EAEAEA}${font Monaco:pixelsize=32}${time  %B} ${time %Y}${font} ${voffset 18}${font Monaco:pixelsize=32}${offset -252}${time %A}${font} ${voffset -85}${offset 30}${font Monaco:pixelsize=132} | ${voffset -75}${offset -100}${font Monaco:pixelsize=32}${color FFA300}Battery 
+${offset 735}${font Monaco:pixelsize=58}$color${battery_percent BAT0}%
+#${voffset -70}${offset 700}${font Monaco:pixelsize=12}${color FFA300}${top name 1}${top_mem cpu 1}${font} 
+#${offset 700}${font Monaco:pixelsize=12}${color FFA300}${top name 2}${top cpu 2}${font}
+#${offset 700}${font Monaco:pixelsize=12}${color FFA300}${top name 3}${top cpu 3}${font}
+#${offset 700}${font Monaco:pixelsize=12}${color FFA300}${top name 4}${top cpu 4}${font}
+#${offset 700}${font Monaco:pixelsize=12}${color FFA300}${top name 5}${top cpu 5}${font}
+#${offset 700}${font Monaco:pixelsize=12}${color FFA300}${top name 6}${top cpu 6}${font}
+${voffset -50}${offset 12}${font Monaco:pixelsize=10}${color FFA300}/root: ${offset 9}$color${fs_free /} / ${fs_size /} ${offset 20}${color FFA300}RAM ${offset 9}$color$mem / $memmax${offset 20}${color FFA300}CPU ${offset 9}$color${cpu cpu0}% ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}% ${offset 30}${color FFA300}DOWNSPEED: ${offset 9}$color${downspeed wlan0} ${offset 18}${color FFA300}UPSPEED: ${offset 9}$color${upspeed wlan0}
+${offset 12}${color FFA300}/home: ${offset 9}$color${fs_free /home} / ${fs_size /home} ${offset 20}${color FFA300}SWAP ${offset 9}$color${swap}/ ${swapmax}${offset 20}$color${top name 1}${offset 9}${offset 30}${color FFA300}DOWNLOAD: ${offset 9}$color${totaldown wlan0} ${offset 24}${color FFA300}UPLOAD: ${offset 9}$color${totalup wlan0}
+#${offset 240}${downspeedgraph wlan0 20,130 000000 ffffff}
+
+
+
+
+
+
+
+
+
+
+
+
+
